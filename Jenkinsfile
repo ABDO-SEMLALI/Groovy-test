@@ -6,8 +6,7 @@ pipeline {
             steps {
                 script {
                     // Load the Groovy script
-                    def rootDir = cd()
-                    def exampleModule = load "${rootDir}@script/SimpleScript.groovy "
+                    def simpleScript = load '.\SimpleScript.groovy'
 
                     // Call a method from the loaded script
                     def greeting = simpleScript.greet('Jenkins')
