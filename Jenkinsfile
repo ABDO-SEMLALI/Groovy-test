@@ -5,8 +5,7 @@ pipeline {
         stage('Load and Execute Groovy Script') {
             steps {
                 script {
-                        def rootDir = pwd()
-                        def exampleModule = load "${rootDir}@script/Example.Groovy "
+                        def exampleModule = load "SimpleScript.groovy"
                         exampleModule.exampleMethod()
                         exampleModule.otherExampleMethod()
                     }       
