@@ -1,4 +1,4 @@
-def exampleMethod() {
+def exampleMethod(name) {
     return "Hello, ${name}!"
 }
 return this
