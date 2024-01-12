@@ -1,5 +1,4 @@
-// SimpleScript.groovy
-def greet(name) {
+def exampleMethod() {
     return "Hello, ${name}!"
 }
 return this
