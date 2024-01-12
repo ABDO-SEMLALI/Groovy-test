@@ -6,8 +6,7 @@ pipeline {
             steps {
                 script {
                         def exampleModule = load "SimpleScript.groovy"
-                        exampleModule.exampleMethod()
-                        exampleModule.otherExampleMethod()
+                        exampleModule.exampleMethod('jenkins')
                     }       
                 }
         }
