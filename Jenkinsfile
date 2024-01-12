@@ -15,7 +15,7 @@ pipeline {
     //                echo greeting
 
                     modules.first = load "SimpleScript.groovy"                    modules.second.init(modules.first)
-                    modules.first.test('Jenkins')
+                    modules.first.greet('Jenkins')
                 }
             }
         }
